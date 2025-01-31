@@ -9,9 +9,19 @@
 1. Создать deployment'ы приложений frontend, backend и cache и соответсвующие сервисы.
 2. В качестве образа использовать network-multitool.
 3. Разместить поды в namespace App.
+
+![IMG](https://github.com/SeNike/Study_24/blob/main/k8s/3.3/1.png)
+
 4. Создать политики, чтобы обеспечить доступ frontend -> backend -> cache. Другие виды подключений должны быть запрещены.
 5. Продемонстрировать, что трафик разрешён и запрещён.
 
+![IMG](https://github.com/SeNike/Study_24/blob/main/k8s/3.3/1.1.png)
+
+ - *из frontend в backend HTTP 200 OK*
+ - *из frontend в cache нет связи*
+ - *из backend в cache HTTP 200 OK*
+ - *из cache в backend нет связи*
+ 
 ### Правила приёма работы
 
 1. Домашняя работа оформляется в своём Git-репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
